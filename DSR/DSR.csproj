@@ -1,0 +1,311 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{CD3525CE-EC89-4C76-8A8C-46058A050DBB}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DSR</RootNamespace>
+    <AssemblyName>DSR</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>FormatFactoryWSI.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Charts.v15.2.Core, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Charts.v18.1.Core, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Data.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.DataAccess.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.DataAccess.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Office.v15.2.Core, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Office.v18.1.Core, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.PivotGrid.v15.2.Core, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.PivotGrid.v18.1.Core, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v15.2.Core, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v18.1.Core, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.RichEdit.v15.2.Core, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.RichEdit.v18.1.Core, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Sparkline.v15.2.Core, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Sparkline.v18.1.Core, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v15.2.UI, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v18.1.UI, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Xpo.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Xpo.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraBars.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraBars.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v15.2.Wizard, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v18.1.Wizard, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraEditors.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGauges.v15.2.Core, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGauges.v18.1.Core, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraNavBar.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraNavBar.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPrinting.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v15.2.Extensions, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraReports.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v18.1.Extensions, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Codes\Client.cs" />
+    <Compile Include="Codes\Fuel.cs" />
+    <Compile Include="Codes\Generator.cs" />
+    <Compile Include="Codes\Logs.cs" />
+    <Compile Include="Codes\Manning.cs" />
+    <Compile Include="DataAccessObject\Connex.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frm_client.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frm_client.Designer.cs">
+      <DependentUpon>frm_client.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frm_fuel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frm_fuel.Designer.cs">
+      <DependentUpon>frm_fuel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frm_generator.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frm_generator.Designer.cs">
+      <DependentUpon>frm_generator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frm_logs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frm_logs.Designer.cs">
+      <DependentUpon>frm_logs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frm_manning.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frm_manning.Designer.cs">
+      <DependentUpon>frm_manning.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frm_welcome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frm_welcome.Designer.cs">
+      <DependentUpon>frm_welcome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PrintRibbonControllerResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PrintRibbonControllerResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SplashScreen1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SplashScreen1.Designer.cs">
+      <DependentUpon>SplashScreen1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="_Reports\daily_return_fuel_by_client.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="_Reports\daily_return_fuel_by_client.Designer.cs">
+      <DependentUpon>daily_return_fuel_by_client.cs</DependentUpon>
+    </Compile>
+    <Compile Include="_Reports\frm_report_by_date_place.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_Reports\frm_report_by_date_place.Designer.cs">
+      <DependentUpon>frm_report_by_date_place.cs</DependentUpon>
+    </Compile>
+    <Compile Include="_Reports\frm_report_by_date.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_Reports\frm_report_by_date.Designer.cs">
+      <DependentUpon>frm_report_by_date.cs</DependentUpon>
+    </Compile>
+    <Compile Include="_Reports\frm_rpt_xgenerator.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_Reports\frm_rpt_xgenerator.Designer.cs">
+      <DependentUpon>frm_rpt_xgenerator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="_Reports\_daily_return_generator.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="_Reports\_daily_return_generator.Designer.cs">
+      <DependentUpon>_daily_return_generator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="_Reports\_daily_return_manning.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="_Reports\_daily_return_manning.Designer.cs">
+      <DependentUpon>_daily_return_manning.cs</DependentUpon>
+    </Compile>
+    <Compile Include="_Reports\_daily_return.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="_Reports\_daily_return.Designer.cs">
+      <DependentUpon>_daily_return.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frm_client.resx">
+      <DependentUpon>frm_client.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frm_fuel.resx">
+      <DependentUpon>frm_fuel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frm_generator.resx">
+      <DependentUpon>frm_generator.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frm_logs.resx">
+      <DependentUpon>frm_logs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frm_manning.resx">
+      <DependentUpon>frm_manning.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frm_welcome.resx">
+      <DependentUpon>frm_welcome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrintRibbonControllerResources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>PrintRibbonControllerResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="SplashScreen1.resx">
+      <DependentUpon>SplashScreen1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_Reports\daily_return_fuel_by_client.resx">
+      <DependentUpon>daily_return_fuel_by_client.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_Reports\frm_report_by_date_place.resx">
+      <DependentUpon>frm_report_by_date_place.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_Reports\frm_report_by_date.resx">
+      <DependentUpon>frm_report_by_date.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_Reports\frm_rpt_xgenerator.resx">
+      <DependentUpon>frm_rpt_xgenerator.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_Reports\_daily_return_generator.resx">
+      <DependentUpon>_daily_return_generator.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_Reports\_daily_return_manning.resx">
+      <DependentUpon>_daily_return_manning.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_Reports\_daily_return.resx">
+      <DependentUpon>_daily_return.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dsr.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dsr_logo.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hd wallpapers %2815%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\transit_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\transit_32x321.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Target-Safe-Security-Systems-Fire-and-Alarm-Security-Santa-Fe-NM-4.jpg" />
+    <None Include="Resources\img-main3.jpg" />
+    <None Include="Resources\Target-Safe-Security-Systems-Fire-and-Alarm-Security-Santa-Fe-NM-41.jpg" />
+    <None Include="Resources\2_nasaspacescapes_0006_7.jpg" />
+    <None Include="Resources\3_nasaspacescapes_0013_14.jpg" />
+    <None Include="Resources\9_nasaspacescapes_0010_11.jpg" />
+    <None Include="Resources\11_nasaspacescapes_0005_6.jpg" />
+    <None Include="Resources\server-16068.jpg" />
+    <None Include="Resources\welc.png" />
+    <None Include="Resources\hjkds.jpg" />
+    <None Include="Resources\electro_group.jpg" />
+    <None Include="Resources\fuels station.jpg" />
+    <None Include="Resources\people.jpg" />
+    <None Include="Resources\people icon.jpg" />
+    <Content Include="FormatFactoryWSI.ico" />
+    <None Include="Resources\jsdk.png" />
+    <None Include="Resources\ABBAS DBOUK.JPG" />
+    <Content Include="WSI.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
